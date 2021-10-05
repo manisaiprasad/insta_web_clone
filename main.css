@@ -1,0 +1,34 @@
+
+.dp-photo {
+    width: 1.5em; 
+    height: 1.5em; 
+    position: relative;
+}
+.story-dp {
+    width: 56px; 
+    height: 56px; 
+    position: relative; 
+    border-width: 2px;
+}
+.post-dp {
+    width: 46px; 
+    height: 46px; 
+    position: relative; 
+    border-width: 2px;
+}
+
+.post-button{
+    right: 0;
+    bottom: 0;
+    top: 0;
+    outline: none;
+}
+.suggest-dp {
+    width: 36px; 
+    height: 36px; 
+    position: relative; 
+    border-width: 2px;
+}
+.suggest-div{
+    height: 50px;
+}

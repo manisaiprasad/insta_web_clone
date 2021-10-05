@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <!-- CSS only -->
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  
+</head>
+<body>
+    <!-- navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container justify-content-center">
+                <div class="d-flex flex-row justify-content-between align-items-center col-9">
+                    <a class="navbar-brand" href="#">
+                        <img src="./logo.png">
+                    </a>
+                    <div>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <ul class="list-inline m-0">
+                          
+                            <button class="btn p-0">
+                                <svg width="1.5em" height="1.5em" style="margin: 10px;"  viewBox="0 0 16 16" class="bi bi-house-door-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                                    <path fill-rule="evenodd"
+                                        d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                </svg>
+    
+                            </button>
+
+                            <button class="btn p-0">
+                                <svg width="1.5em" height="1.5em" style="margin: 10px;"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </button>
+                            
+                            <button class="btn p-0">
+                            <svg width="1.5em" height="1.5em" style="margin: 10px;"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                                <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                              </svg>
+                            </button>
+                            
+                            <button class="btn p-0">
+                                <svg width="1.5em" height="1.5em" style="margin: 10px;"  viewBox="0 0 16 16" class="bi bi-compass"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 15.016a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zm0 1a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z" />
+                                <path
+                                    d="M6 1a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1zm.94 6.44l4.95-2.83-2.83 4.95-4.95 2.83 2.83-4.95z" />
+                                </svg>
+                            </button>
+                            
+                            <button class="btn p-0">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" style="margin: 10px;" class="bi bi-heart"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                            
+                            <li class="list-inline-item ml-2 align-middle">
+                                    <button
+                                        class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border dp-photo">
+                                        <img src="./dp.JPG" alt="..."
+                                            style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                    </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mt-4">
+        <div class="container d-flex justify-content-center">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-8">
+
+                        <div class="card">
+                            <div class="card-body d-flex justify-content-start">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="post1.jpg" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>manisai</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./krishna.png" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>hari</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./kakashi.jpg" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>Kakashi</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./jiraya.jpg" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>jiraya</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./Minato-Yellow-Flash-Wallpaper-2.jpg" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>minato</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./Hashirama_Senju.png" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>hashirama</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./Itachi-Cropped.jpg" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>itachi</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn p-0 m-0">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <div
+                                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                                    <img src="./main-qimg-f7a2625148a25ce0dd318f44ac516543.jpeg" alt="..."
+                                                        style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                                </div>
+                                                <small>hinata</small>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    
+                        
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column mt-4 mb-4">
+                            <!-- post1 -->
+                            <div class="card">
+                                    <div class="card-header p-3">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger post-dp mr-3">
+                                                <img src="./post1.jpg" alt="..."
+                                                    style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                            </div>
+                                            <small><b style="margin: 5px;">manisai</b></small> 
+                                        </div>
+                                    </div>
+                                <img src="./naruto_post.png" class="card-img-top" alt="..." width="500px">
+                                <div class="card-body">
+                                    <div class="d-flex flex-row">
+                                        <ul class="list-inline m-0">
+                                          
+                                            <button class="btn p-0">
+                                                <svg width="1.5em" height="1.5em" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                 </svg>
+                                            </button>
+                                            
+                                            <button class="btn p-0">
+                                                <svg width="1.5em" height="1.5em" style="margin: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                                </svg>
+                                            </button>
+                                            
+                                            <button class="btn p-0">
+                                                <svg width="1.5em" height="1.5em" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                                                </svg>
+                                            </button>
+                                            
+                                        </ul>
+                                    </div>
+                                <h6 class="card-title">2,00,000 likes</h5>
+                                                               
+                                <p class="card-text">
+                                    <small>
+                                        <b>manisai</b>
+                                        fight between legends 🔥
+                                    </small> <br>
+                                    <small class="text-muted">..more</small> <br>
+                                    <small class="text-muted">View All comments</small> <br>
+
+                                    <small><b>hari</b> thats a whole different level❤️‍🔥 </small> <br>
+                                    <small><b>kakashi</b> hashirama is on 🔥 </small> <br>
+                                    <small><b>tobi</b> 🔥 madara </small> <br>
+                                    <small class="text-muted">10 Hours Ago </small> <br>
+
+                                </p>
+                                <div class="position-relative" style="border-top: 1px solid lightgray;">
+                                    <form>
+                                        <input class="w-100 border-0 p-3" style="outline: none;" placeholder="Add a comment...">
+                                        <button class=" btn btn-primary position-absolute post-button" style="color: #0d6efd;background-color:transparent;border: transparent;">Post</button>
+                                    </form>
+                                </div>
+                                
+                                </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-dp">
+                                <img src="./dp.JPG" alt="..." style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                            </div>
+                            <div style="font-size: 14px; margin: 15px;">
+                                <span style="display: block;"><b>Mani Sai Prasad</b> </span>
+                                <span class="text-muted">manisaiprasad </span>
+                            </div>
+                            <div>
+                                <button class=" btn btn-primary" style="color: #0d6efd;background-color:transparent;border: transparent;" >
+                                    <small>Switch</small> 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="suggestions">
+                            <small class="text-muted"> <b>Suggestions For You</b> </small>
+                            <div class="d-flex align-items-center suggest-div" >
+                                <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger suggest-dp ">
+                                    <img src="./Instagram logo.jpg" style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                                </div>
+                                <div style="font-size: 12px; margin: 15px;">
+                                    <span style="display: block;"><b>Instagram</b> </span>
+                                    <span class="text-muted">Instagram recommended </span>
+                                </div>
+                                <div>
+                                    <button class=" btn btn-primary" style="color: #0d6efd;background-color:transparent;border: transparent;" >
+                                        <small>Follow</small> 
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="d-flex align-items-center suggest-div">
+                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger suggest-dp ">
+                                <img src="./naruto-1249229.jpeg" style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                            </div>
+                            <div style="font-size: 12px; margin: 15px;">
+                                <span style="display: block;"><b>Naruto Uzumaki</b> </span>
+                                <span class="text-muted">Instagram recommended</span>
+                            </div>
+                            <div>
+                                <button class=" btn btn-primary" style="color: #0d6efd;background-color:transparent;border: transparent;" >
+                                    <small>Follow</small> 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center suggest-div">
+                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger suggest-dp ">
+                                <img src="./sasuke.png" style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                            </div>
+                            <div style="font-size: 12px; margin: 15px;">
+                                <span style="display: block;"><b>Sasuke Uchiha</b> </span>
+                                <span class="text-muted">Instagram recommended </span>
+                            </div>
+                            <div>
+                                <button class=" btn btn-primary" style="color: #0d6efd;background-color:transparent;border: transparent;" >
+                                    <small>Follow</small> 
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center suggest-div">
+                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger suggest-dp ">
+                                <img src="./kakashi.jpg" style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                            </div>
+                            <div style="font-size: 12px; margin: 15px;">
+                                <span style="display: block;"><b>Kakashi Hatake</b> </span>
+                                <span class="text-muted">Instagram recommended </span>
+                            </div>
+                            <div>
+                                <button class=" btn btn-primary" style="color: #0d6efd;background-color:transparent;border: transparent;" >
+                                    <small>Follow</small> 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center suggest-div">
+                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger suggest-dp ">
+                                <img src="./naruto-kurama-1190955.jpg" style="transform: scale(1.5); width: 100%; position: absolute; left: 0;">
+                            </div>
+                            <div style="font-size: 12px; margin: 15px;">
+                                <span style="display: block;"><b>Kurama (The 9 tails)</b> </span>
+                                <span class="text-muted">Instagram recommended </span>
+                            </div>
+                            <div>
+                                <button class=" btn btn-primary" style="color: #0d6efd;background-color:transparent;border: transparent;" >
+                                    <small>Follow</small> 
+                                </button>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
