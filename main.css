@@ -32,3 +32,6 @@
 .suggest-div{
     height: 50px;
 }
+.list-inline {
+    white-space:nowrap;
+  }
